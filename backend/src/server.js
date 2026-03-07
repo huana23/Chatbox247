@@ -7,14 +7,19 @@ const cookieParser = require('cookie-parser');
 const connectDB = require('../config/connectDB');
 const routes = require('../routes/index.route');
 const userModel = require('../models/user.model');
+const cors = require('cors');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(cors({origin: 'http://localhost:5173', credentials: true}));
 connectDB();
 
 routes(app);
 
+app.get('/', (req, res) => {
+    return res.json({ message: 'OK', metadata: {message: 'OK'} });
+})
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;

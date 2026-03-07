@@ -166,6 +166,29 @@ class UserController {
             metadata: true,
         }).send(res);
     }
+    async refreshToken(req, res) {
+        const refreshToken = req.cookies.refreshToken;
+
+        if (!refreshToken) {
+            throw new AuthFailureError('Vui lòng đăng nhập lại');
+        }
+        const decoded = await verifyToken(refreshToken);
+        if (!decoded) {
+            throw new AuthFailureError('Vui lòng đăng nhập lại');
+        }
+        const accessToken = createAccessToken({ id: decoded.id });
+        res.cookie('accessToken', accessToken, {
+            httpOnly: true,
+            secure: true,
+            maxAge: 1 * 24 * 60 * 60 * 1000, // 1 day
+            sameSite: 'strict',
+        });
+
+        return new OK({
+            message: 'Refresh token thành công',
+            metadata: true,
+        }).send(res);
+    }
 }
 
 module.exports = new UserController();

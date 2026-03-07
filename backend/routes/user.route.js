@@ -11,6 +11,7 @@ router.get('/auth', authUser, asyncHandler(userController.authUser));
 router.get('/logout', authUser, asyncHandler(userController.logout));
 router.post('/forgot-password', asyncHandler(userController.forgotPassword));
 router.post('/verify-forgot-password', asyncHandler(userController.verifyForgotPassword));
+router.get('/refresh-token', asyncHandler(userController.refreshToken));
 
 
 
