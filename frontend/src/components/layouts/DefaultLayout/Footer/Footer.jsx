@@ -20,10 +20,10 @@ const Footer = () => {
 
           {/* Logo + Giới thiệu */}
           <div>
-            <img src={Logo} alt="ChatBox247 Logo" className="h-10 w-auto mb-6" />
+            <img src={Logo} alt="ChatBot247 Logo" className="h-10 w-auto mb-6" />
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              <strong>ChatBox247</strong> là nền tảng chatbot AI giúp doanh nghiệp 
+              <strong>ChatBot247</strong> là nền tảng chatbot AI giúp doanh nghiệp 
               chăm sóc khách hàng tự động 24/7, tăng chuyển đổi và tối ưu vận hành.
             </p>
 
@@ -116,7 +116,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} ChatBox247. All rights reserved.
+          © {new Date().getFullYear()} ChatBot247. All rights reserved.
         </div>
 
       </div>

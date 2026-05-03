@@ -1,6 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import BackToTop from "./BackToTop";
+import ChatWidget from "./ChatWidget";
+import Zalo from "./Zalo";
+import Messenger from "./Meassge";
+
+
+
 
 function DefaultLayout({ children }) {
   return (
@@ -11,7 +17,14 @@ function DefaultLayout({ children }) {
             {children}
         </main>
 
-        <BackToTop /> 
+        
+
+          <BackToTop />
+          <Messenger />
+          <Zalo />
+          <ChatWidget />
+
+
         <Footer />
     </div>
   );

@@ -31,7 +31,7 @@ function BackToTop() {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-8 right-8 p-3 bg-orange-500 text-white rounded-full shadow-lg transition-opacity duration-300 cursor-pointer ${
+            className={`fixed bottom-6 left-8 p-3 bg-orange-500 text-white rounded-full shadow-lg transition-opacity duration-300 cursor-pointer ${
                 isVisible ? "opacity-100" : "opacity-0"
             }`}
             style={{ transition: "opacity 0.3s" }}

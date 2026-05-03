@@ -33,14 +33,12 @@ function Pricing() {
 
           {/* Price */}
           <div className="text-center mb-10">
-            <p className="text-gray-500 mb-2">Chi phí xử lý</p>
+            <p className="text-gray-500 mb-2">Chi phí chỉ từ</p>
             <div className="flex items-end justify-center gap-2">
               <span className="text-5xl md:text-6xl font-extrabold text-gray-900">
-                50đ
+                199k
               </span>
-              <span className="text-gray-600 text-lg mb-2">
-                / 1 tin nhắn
-              </span>
+              
             </div>
             <p className="text-sm text-gray-500 mt-3">
               (Tin nhắn từ khách hàng được AI xử lý)
@@ -54,17 +52,22 @@ function Pricing() {
           <ul className="space-y-5 text-gray-700">
             <li className="flex items-start gap-3">
               <CheckIcon className="w-6 h-6 text-orange-500 shrink-0 mt-1" />
-              Tính phí dựa trên số lượng tin nhắn nhận từ khách hàng.
+              Tư vấn theo kịch bản có sẵn.
             </li>
 
             <li className="flex items-start gap-3">
               <CheckIcon className="w-6 h-6 text-orange-500 shrink-0 mt-1" />
-              Tặng ngay<span className="font-bold">200.000đ</span>cho tài khoản mới để dùng thử.
+              Tặng ngay gói<span className="font-bold">1000</span>tin nhắn AI chốt sale.
             </li>
 
             <li className="flex items-start gap-3">
               <CheckIcon className="w-6 h-6 text-orange-500 shrink-0 mt-1" />
-              Sử dụng vô thời hạn, không giới hạn thời gian.
+              Tư vấn tối ưu quy trình bán hàng miễn phí
+            </li>
+
+            <li className="flex items-start gap-3">
+              <CheckIcon className="w-6 h-6 text-orange-500 shrink-0 mt-1" />
+              Miễn phí cài đặt vào Fanpage
             </li>
           </ul>
 

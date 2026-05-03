@@ -3,11 +3,16 @@ import Slider from "react-slick";
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
+  BoltIcon,
+  ChatBubbleLeftRightIcon,
+  RocketLaunchIcon,
+  UserGroupIcon,
+  PaperAirplaneIcon
 } from "@heroicons/react/24/outline";
 
-import Banner1 from "../../../assets/images/hero/banner1.jpg";
-import Banner2 from "../../../assets/images/hero/banner2.avif";
-import Banner3 from "../../../assets/images/hero/banner3.avif";
+import Banner1 from "../../../assets/images/hero/bannerh1.jpg";
+import Banner2 from "../../../assets/images/hero/bannerh2.jpg";
+import Banner3 from "../../../assets/images/hero/bannerh3.jpg";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -60,17 +65,59 @@ function Hero() {
 
                     {/* Heading */}
                     <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                        Giải pháp ChatBox
+                        Giải pháp ChatBot
                         <span className="bg-linear-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                         {" "}AI tự động 24/7
                         </span>
                     </h1>
 
                     {/* Description */}
-                    <p className="text-base sm:text-lg text-gray-200 mb-10">
-                        Tăng trải nghiệm khách hàng, tối ưu vận hành và gia tăng
-                        chuyển đổi với nền tảng AI thông minh dành cho doanh nghiệp hiện đại.
-                    </p>
+                    <div className="text-base sm:text-lg text-gray-200 mb-10 space-y-4">
+                      <p className="text-xl sm:text-2xl font-bold text-white">
+                        ChatBot247 tăng tỷ lệ chốt đơn dựa trên các yếu tố :
+                      </p>
+
+                      <ul className="space-y-3">
+
+                        <li className="flex items-start gap-3">
+                          <BoltIcon className="w-6 h-6 text-blue-400 mt-1 flex-shrink-0" />
+                          <span>
+                            Tăng <span className="font-semibold text-white">80%</span> tỷ lệ khách hàng phản hồi trong
+                            <span className="font-semibold text-white"> 10s đầu cuộc hội thoại</span>
+                          </span>
+                        </li>
+
+                        <li className="flex items-start gap-3">
+                          <UserGroupIcon className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
+                          <span>
+                            Tư vấn chuyên nghiệp, chốt sale tức thời theo các ngành nghề kinh doanh
+                          </span>
+                        </li>
+
+                        <li className="flex items-start gap-3">
+                          <ChatBubbleLeftRightIcon className="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" />
+                          <span>
+                            ChatBot247 trả lời <span className="font-semibold text-white">tự nhiên như người thật</span>
+                          </span>
+                        </li>
+
+                        <li className="flex items-start gap-3">
+                          <RocketLaunchIcon className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
+                          <span>
+                            Tăng <span className="font-semibold text-white">50%</span> tỷ lệ chốt đơn nhờ
+                            <span className="font-semibold text-white"> các tính năng đặc biệt</span>
+                          </span>
+                        </li>
+
+                        <li className="flex items-start gap-3">
+                          <PaperAirplaneIcon className="w-6 h-6 text-pink-400 mt-1 flex-shrink-0" />
+                          <span>
+                            Chuyển tiếp tức thời thông tin khách hàng đến nhân viên tư vấn qua các nền tảng Zalo/Facebook/Email.
+                          </span>
+                        </li>
+
+                      </ul>
+                    </div>
 
                     {/* Buttons */}
                     <div className="flex flex-wrap gap-4 mb-12">

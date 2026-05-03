@@ -1,12 +1,20 @@
 import Partner1 from "../../../assets/images/partners/Partner1.svg";
 import Partner2 from "../../../assets/images/partners/Partner2.svg";
 import Partner3 from "../../../assets/images/partners/Partner3.svg";
+import Partner4 from "../../../assets/images/partners/Partner4.jpg";
+import Partner5 from "../../../assets/images/partners/Partner5.jpg";
+import Partner6 from "../../../assets/images/partners/Partner6.jpg";
+
 
 function SectionPartners() {
   const partners = [
     { name: "Meta", logo: Partner1 },
     { name: "Google", logo: Partner2 },
     { name: "OpenAI", logo: Partner3 },
+    { name: "Izi-Sofr", logo: Partner4 },
+    { name: "Happ-Mom", logo: Partner5 },
+    { name: "An-Duong", logo: Partner6 },
+
   ];
 
   return (
@@ -29,7 +37,6 @@ function SectionPartners() {
             <div
               key={index}
               className="
-                group
                 flex items-center justify-center
                 h-24
                 bg-gray-50
@@ -43,12 +50,7 @@ function SectionPartners() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="
-                  max-h-12 object-contain
-                  grayscale opacity-70
-                  transition-all duration-300
-                  group-hover:grayscale-0 group-hover:opacity-100
-                "
+                className="max-h-12 object-contain transition-all duration-300"
               />
             </div>
           ))}

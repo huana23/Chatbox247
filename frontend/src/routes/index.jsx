@@ -18,6 +18,7 @@ import FeaturePage from '../pages/FeaturePage'
 
 
 
+
 //public route
 const publicRoutes = [
     { path: '/', component: LandingPage},
@@ -27,11 +28,7 @@ const publicRoutes = [
     { path: '/gioi-thieu', component: AboutPage},
     { path: '/dieu-khoan-su-dung', component: TermsPage},
     { path: '/chinh-sach-bao-mat', component: PrivacyPolicyPage},
-    { path: '/tinh-nang', component:  FeaturePage},
-
-
-
-
+    { path: '/tinh-nang', component:  FeaturePage}
 
 
 

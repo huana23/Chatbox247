@@ -70,7 +70,7 @@ const PrivacyPolicyPage = () => {
               4. Chia sẻ thông tin với bên thứ ba
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              ChatBox AI không chia sẻ hoặc bán thông tin cá nhân của bạn cho bên thứ ba ngoại trừ trong các trường hợp:
+              ChatBot AI không chia sẻ hoặc bán thông tin cá nhân của bạn cho bên thứ ba ngoại trừ trong các trường hợp:
             </p>
             <ul className="text-lg text-gray-700 list-disc pl-8 space-y-4">
               <li>Có sự đồng ý rõ ràng của bạn.</li>
@@ -85,10 +85,10 @@ const PrivacyPolicyPage = () => {
               5. Bảo mật thông tin kinh doanh và cam kết không cạnh tranh
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              ChatBox AI cam kết bảo mật tuyệt đối mọi thông tin kinh doanh của khách hàng, bao gồm nhưng không giới hạn: sản phẩm, giá bán, số lượng đơn hàng, doanh thu và lịch sử giao dịch.
+              ChatBot AI cam kết bảo mật tuyệt đối mọi thông tin kinh doanh của khách hàng, bao gồm nhưng không giới hạn: sản phẩm, giá bán, số lượng đơn hàng, doanh thu và lịch sử giao dịch.
             </p>
             <p className="text-lg text-gray-700">
-              Các thông tin này chỉ được sử dụng nhằm mục đích cung cấp dịch vụ AI Agent và được bảo vệ theo cùng tiêu chuẩn như dữ liệu cá nhân. ChatBox AI không sử dụng dữ liệu kinh doanh của khách hàng để kinh doanh sản phẩm hoặc dịch vụ cạnh tranh trực tiếp, cũng như không tiếp cận khách hàng cuối của bạn cho mục đích thương mại.
+              Các thông tin này chỉ được sử dụng nhằm mục đích cung cấp dịch vụ AI Agent và được bảo vệ theo cùng tiêu chuẩn như dữ liệu cá nhân. ChatBot AI không sử dụng dữ liệu kinh doanh của khách hàng để kinh doanh sản phẩm hoặc dịch vụ cạnh tranh trực tiếp, cũng như không tiếp cận khách hàng cuối của bạn cho mục đích thương mại.
             </p>
           </section>
 
@@ -110,7 +110,7 @@ const PrivacyPolicyPage = () => {
               7. Cookie và công nghệ theo dõi
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              ChatBox AI có thể sử dụng cookie để:
+              ChatBot AI có thể sử dụng cookie để:
             </p>
             <ul className="text-lg text-gray-700 list-disc pl-8 space-y-4">
               <li>Ghi nhớ đăng nhập của bạn.</li>

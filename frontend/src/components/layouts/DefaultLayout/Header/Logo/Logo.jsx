@@ -6,7 +6,7 @@ function Logo() {
     <Link to="/" className="flex items-center">
       <img
         src={LogoPage}
-        alt="ChatBox247 Logo"
+        alt="ChatBot247 Logo"
         className="h-12 w-auto"
       />
     </Link>

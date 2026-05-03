@@ -6,9 +6,9 @@ import Contact from "../../components/sections/Contact";
 function ServicePage() {
     return ( 
         <>
-            <Pricing />
-            <Capabilities />
             <Contact />
+            <Capabilities />
+            <Pricing />
         </>
     );
 }

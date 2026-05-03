@@ -1,7 +1,7 @@
 import Hero from "../../components/sections/Hero";
 import SectionWhyDiro from "./SectionWhyDiro";
-import Pricing from "../../components/sections/Pricing";
 import SectionPartners from "./SectionPartners";
+import Pricing from "../../components/sections/Pricing";
 import Feature from "../../components/sections/Feature";
 import Capabilities from "../../components/sections/Capabilities";
 import Contact from "../../components/sections/Contact";
@@ -13,10 +13,10 @@ function HomePage() {
         <>
             <Hero />
             <SectionWhyDiro />
-            <Pricing />
-            <SectionPartners />
-            <Feature />
             <Capabilities />
+            <Feature />
+            <SectionPartners />
+            <Pricing />
             <Contact />
         </>
     );
