@@ -36,29 +36,29 @@ function Capabilities() {
     ];
 
     return (
-        <section className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 text-center">
+        <section className="py-16 sm:py-24 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 sm:px-8 lg:px-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 sm:mb-4 text-center">
                     Các Tính Năng Nổi Bật Của Giải Pháp AI
                 </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto text-center mb-16">
+                <p className="text-gray-600 max-w-2xl mx-auto text-center mb-10 sm:mb-16 text-sm sm:text-base px-2">
                     Giải pháp AI toàn diện giúp doanh nghiệp tối ưu quy trình chăm sóc khách hàng, tăng trưởng doanh thu và cải thiện hiệu quả công việc một cách đáng kể.
                 </p>
 
                 {/* Capabilities Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                     {capabilities.map((item, index) => {
                         const Icon = item.icon;
                         return (
                             <div
                                 key={index}
-                                className="group bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+                                className="group bg-white border border-gray-100 rounded-2xl p-5 sm:p-8 text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
                             >
-                                <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-xl bg-orange-50 group-hover:bg-orange-100 transition">
-                                    <Icon className="w-8 h-8 text-orange-500" />
+                                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 flex items-center justify-center rounded-xl bg-orange-50 group-hover:bg-orange-100 transition">
+                                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-orange-500" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                                <p className="text-gray-600 text-base">{item.description}</p>
+                                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                                <p className="text-gray-600 text-sm sm:text-base">{item.description}</p>
                             </div>
                         );
                     })}

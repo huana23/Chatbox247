@@ -1,16 +1,13 @@
-import Pricing from "../../components/sections/Pricing";
-import Capabilities from "../../components/sections/Capabilities";
-import Contact from "../../components/sections/Contact";
-
+import { Pricing, Capabilities, Contact } from '../../components/sections';
 
 function ServicePage() {
-    return ( 
-        <>
-            <Contact />
-            <Capabilities />
-            <Pricing />
-        </>
-    );
+  return (
+    <>
+      <Contact />
+      <Capabilities />
+      <Pricing />
+    </>
+  );
 }
 
 export default ServicePage;

@@ -3,7 +3,13 @@
 
 @import "tailwindcss";
 .nav-link {
-  @apply text-gray-700 hover:text-orange-500 transition font-medium;
+  @apply text-gray-700 hover:text-orange-500 transition font-medium text-sm;
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    @apply text-base;
+  }
 }
 
 .mobile-link {

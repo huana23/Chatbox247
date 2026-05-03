@@ -1,12 +1,7 @@
-import  SectionChat  from "./SectionChat";
-
+import SectionChat from './SectionChat';
 
 function FreeChat() {
-    return (
-        <>
-            <SectionChat />
-        </>
-    );
+  return <SectionChat />;
 }
 
 export default FreeChat;

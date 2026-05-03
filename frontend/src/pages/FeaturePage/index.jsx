@@ -1,14 +1,12 @@
-import Feature from "../../components/sections/Feature";
-import Capabilities from "../../components/sections/Capabilities";
-
+import { Feature, Capabilities } from '../../components/sections';
 
 function FeaturePage() {
-    return (  
-        <>
-            <Feature />
-            <Capabilities />
-        </>
-    );
+  return (
+    <>
+      <Feature />
+      <Capabilities />
+    </>
+  );
 }
 
 export default FeaturePage;

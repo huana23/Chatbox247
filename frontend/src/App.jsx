@@ -1,34 +1,47 @@
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { publicRoutes } from "./routes";
+import DefaultLayout from "./components/layouts/DefaultLayout";
+import { useEffect } from "react";
+import { scrollToTop } from "./constants";
 
-import { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes } from './routes';
-import DefaultLayout from './components/layouts/DefaultLayout';
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    scrollToTop();
+  }, [pathname]);
 
+  return null;
+}
 
 function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        {publicRoutes.map((route) => {
+          const Page = route.component;
+          const Layout = route.layout === null ? null : DefaultLayout;
 
-
-
-    return (
-        <Router>
-            <div className="App">
-                <Routes>
-                    {publicRoutes.map((route, index) => {                                        
-                        const Page = route.component;
-
-                        let Layout = DefaultLayout;
-                        if(route.layout) {
-                          Layout = route.layout
-                        }else if  (route.layout === null) {
-                          Layout = Fragment
-                        }
-                        return <Route key={index} path={route.path} element={<Layout><Page /></Layout>} />;
-                    })}
-                </Routes>
-            </div>
-        </Router>
-    );
+          return (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={
+                Layout ? (
+                  <Layout>
+                    <Page />
+                  </Layout>
+                ) : (
+                  <Page />
+                )
+              }
+            />
+          );
+        })}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
